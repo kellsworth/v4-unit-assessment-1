@@ -2,16 +2,19 @@
 /* Create a variable called 'myName' with a value that is your name as a string. */
 
 //CODE HERE 
+let myName = "Karen";
 
 //////////////////PROBLEM 2////////////////////
 /* Create a variable called 'faveNum' with a value that is your favorite number. */
 
 //CODE HERE
+let faveNum = 11;
 
 //////////////////PROBLEM 3////////////////////
 /* Create a variable called 'lovesCode' and assign it a boolean value. */
 
 //CODE HERE
+let lovesCode = true;
 
 //////////////////PROBLEM 4////////////////////
 /*
@@ -20,6 +23,11 @@
 */
 
 //CODE HERE
+var sum = function(num1, num2) {
+  return (num1 + num2);
+  sum(20, 10)
+}
+ 
 
 //////////////////PROBLEM 5////////////////////
 /*
@@ -31,6 +39,18 @@
 
 //CODE HERE
 
+function trueOrFalse(data) {
+
+  if(data = 35){
+    return true
+  } else {
+    return false
+  }
+
+}
+trueOrFalse(35)
+
+
 //////////////////PROBLEM 6////////////////////
 /*
   Create a function called 'oddChecker' that takes in one parameter, 'num'. 
@@ -41,6 +61,17 @@
 
 //CODE HERE
 
+
+function oddChecker(num) {
+
+    if (num = 3) {
+      return 'the number is odd';
+  } else if(num = 42) {
+      return 'the number is even';
+  }
+}
+console.log(oddChecker(3))
+
 //////////////////PROBLEM 7////////////////////
 /*
   Create a function called 'iLove' that takes in two string parameters, 'name' and 'love'. 
@@ -50,18 +81,30 @@
 
 //CODE HERE
 
+let name = "Russ";
+let love = "dog";
+
+function iLove(name, love) {
+  return "(name) loves (love)"
+  
+}
+
 
 //////////////////PROBLEM 8////////////////////
 /* Create a copy of the faveColors array called 'colorCopy' using the slice method. */
 
-const faveColors = ['red', 'green', 'black']
+const faveColors = ['red', 'green', 'black'];
 
 //CODE HERE
+let colorCopy = faveColors.slice(0, 3);
+
 
 //////////////////PROBLEM 9////////////////////
 /* Add a fourth color to the end of the 'colorCopy' array using the push method. */
 
 //CODE HERE
+colorCopy.push('purple');
+
 
 //////////////////PROBLEM 10////////////////////
 /*
@@ -72,6 +115,10 @@ const faveColors = ['red', 'green', 'black']
 const numbers = [1, 2, 3, 4, 5]
 
 //CODE HERE
+
+const middleNums = numbers.slice(1, 4);
+
+
 
 //////////////////PROBLEM 11////////////////////
 /*
@@ -88,6 +135,17 @@ const numbers = [1, 2, 3, 4, 5]
 */
 
 //CODE HERE
+let me = {
+  firstName: 'Karen',
+  state: 'Utah',
+  age: 55
+  }
+  function greeter(me){
+  return 'Hello! My name is ' + me.name + 'and I live in ' + me.state;
+};
+
+
+
 
 //////////////////PROBLEM 12////////////////////
 /* 
@@ -103,6 +161,12 @@ const numbers = [1, 2, 3, 4, 5]
 */
 
 // CODE HERE
+
+let bigOrSmall(arr){
+
+  let answers = []
+}
+
 
 //////////////////PROBLEM 13////////////////////
 /* 
