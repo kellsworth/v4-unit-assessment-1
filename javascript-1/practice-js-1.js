@@ -135,14 +135,14 @@ const middleNums = numbers.slice(1, 4);
 */
 
 //CODE HERE
-let me = {
-  firstName: 'Karen',
-  state: 'Utah',
-  age: 55
-  }
-  function greeter(me){
-  return 'Hello! My name is ' + me.name + 'and I live in ' + me.state;
-};
+// let me = {
+//   firstName: 'Karen',
+//   state: 'Utah',
+//   age: 55
+//   }
+//   function greeter(me){
+//   return 'Hello! My name is ' + me.name + 'and I live in ' + me.state;
+// };
 
 
 
@@ -162,10 +162,7 @@ let me = {
 
 // CODE HERE
 
-let bigOrSmall(arr){
-
-  let answers = []
-}
+let bigOrSmall = [33, 56, 63, 8, 23, 89]
 
 
 //////////////////PROBLEM 13////////////////////
@@ -179,6 +176,8 @@ let bigOrSmall(arr){
 */
 
 //CODE HERE
+let arrayReverser = [arr]
+
 
 //////////////////PROBLEM 14////////////////////
 
@@ -204,16 +203,16 @@ function secondFunction() {
 */
 
 //This array should contain the variable names (as strings) accessible in the global scope.
-let globalScope = ['global', 'inner', 'outer', 'functional']
+let globalScope = ['firstFunction', 'outer']
 
 //This array should contain the variable names (as strings) accessible in the firstFunction function.
-let firstFunctionScope = ['global', 'inner', 'outer', 'functional']
+let firstFunctionScope = ['outer', 'inner']
 
 //This array should contain the variable names (as strings) accessible in the innerFunction function.
 let innerFunctionScope = ['global', 'inner', 'outer', 'functional']
 
 //This array should contain the variable names (as strings) accessible in the secondFunction function.
-let secondFunctionScope = ['global', 'inner', 'outer', 'functional']
+let secondFunctionScope = ['secondFunction', 'firstFunction', 'global']
 
 
 //////////////////PROBLEM 15////////////////////
