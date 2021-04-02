@@ -1,0 +1,175 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+}
+
+main {
+  padding: 15px;
+
+}
+
+body {
+  background-color: hsl(180, 100%, 100%);
+  margin: 0px;
+  padding: 0px;
+  width: 100vw;
+}
+
+.header {
+  background-color: rgb(86, 241, 216);
+  width: 100%;
+  height: 100px;
+}
+
+.header h1 {
+  font-size: 30px;
+  text-align: left;
+  padding-top: 35px;
+  margin-left: 15px;
+}
+
+h2 {
+  margin-top: 15px;
+}
+
+.container-one {
+  border-style: dotted;
+  border: 5px, black;
+  padding: 20px;
+  display: flex;
+  align-items: flex-end;
+
+ 
+}
+
+.container-one h1 {
+  padding: 10px;
+  font-size: 20px;
+}
+
+.rectangle {
+  width: 200px;
+  height: 100px;
+  background-color: blueviolet;
+  border: 2px solid red;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  background-color:blue;
+  margin-left: 20px;
+  margin-right: 20px;
+  box-shadow: 5px 5px 5px black;
+  border: 2px solid black;
+}
+
+.large-square {
+  width: 200px;
+  height: 200px;
+  background-color: palevioletred;
+  border: 2px solid black;
+}
+
+.img .container-one {
+  float:left;
+}
+
+.container-two {
+  border-style: dotted;
+  border: 5px, black;
+  padding: 20px;
+}
+
+.container-two h1 {
+  padding: 10px;
+  font-size: 20px;
+}
+
+.circle {
+  border-radius: 50%;
+  border: 2px solid black;
+
+}
+
+.circle img {
+  height: 20px;
+  width: 20px;
+  
+}
+
+.circle-one {
+  height: 100px;
+  width: 100px;
+  margin-left: 45px;
+  padding: 20px;
+}
+
+.circle-two {
+  height: 150px;
+  width: 150px;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.circle-three {
+  height: 200px;
+  width: 200px;
+}
+
+.container-three {
+  border-style: dotted;
+  border: 5px, black;
+  padding: 20px;
+
+}
+
+.lg-square {
+  height: 250px;
+  width: 250px;
+  background-color: blanchedalmond;
+  border: 2px solid black;
+}
+
+.lg-circle {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  background-color: forestgreen;
+  border: 2px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.small-square {
+  height: 125px;
+  width: 125px;
+  background-color:rgb(187, 58, 11);
+  text-align: center;
+  color: azure;
+}
+
+.small-circle {
+  height: 90px;
+  width: 90px;
+  background-color: rgb(6, 65, 241);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.small-circle img {
+  height: 30px;
+  background-color: transparent;
+  clear: both;
+}
+
+p {
+  top: 10px;
+  position: relative;
+}

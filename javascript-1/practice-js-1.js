@@ -23,11 +23,11 @@ let lovesCode = true;
 */
 
 //CODE HERE
-var sum = function(num1, num2) {
+var sum = function (num1, num2) {
   return (num1 + num2);
   sum(20, 10)
 }
- 
+
 
 //////////////////PROBLEM 5////////////////////
 /*
@@ -41,14 +41,13 @@ var sum = function(num1, num2) {
 
 function trueOrFalse(data) {
 
-  if(data = 35){
-    return true
+  if (data = data) {
+    return true;
   } else {
-    return false
+    return false;
   }
-
 }
-trueOrFalse(35)
+// console.log(trueOrFalse)
 
 
 //////////////////PROBLEM 6////////////////////
@@ -64,13 +63,13 @@ trueOrFalse(35)
 
 function oddChecker(num) {
 
-    if (num = 3) {
-      return 'the number is odd';
-  } else if(num = 42) {
-      return 'the number is even';
+  if (num % 2 === 1) {
+    return 'the number is odd';
+  } else {
+    return 'the number is even';
   }
 }
-console.log(oddChecker(3))
+// console.log(oddChecker)
 
 //////////////////PROBLEM 7////////////////////
 /*
@@ -81,12 +80,12 @@ console.log(oddChecker(3))
 
 //CODE HERE
 
-let name = "Russ";
+let name = 'Russ';
 let love = "dog";
 
 function iLove(name, love) {
-  return "(name) loves (love)"
-  
+  return `${name} loves ${love}`
+
 }
 
 
@@ -135,14 +134,14 @@ const middleNums = numbers.slice(1, 4);
 */
 
 //CODE HERE
-// let me = {
-//   firstName: 'Karen',
-//   state: 'Utah',
-//   age: 55
-//   }
-//   function greeter(me){
-//   return 'Hello! My name is ' + me.name + 'and I live in ' + me.state;
-// };
+let me = {
+  firstName: 'Karen',
+  state: 'Utah',
+  age: 55,
+  greeter: (me) => {
+    return 'Hello! My name is ' + me.name + 'and I live in ' + me.state;
+  }
+};
 
 
 
@@ -162,7 +161,17 @@ const middleNums = numbers.slice(1, 4);
 
 // CODE HERE
 
-let bigOrSmall = [33, 56, 63, 8, 23, 89]
+function bigOrSmall(arr) {
+  let answers = []
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] > 100) {
+      answers.push('big')
+    } else {
+      answers.push('small')
+    }
+  }
+  return answers
+}
 
 
 //////////////////PROBLEM 13////////////////////
@@ -176,7 +185,13 @@ let bigOrSmall = [33, 56, 63, 8, 23, 89]
 */
 
 //CODE HERE
-let arrayReverser = [arr]
+function arrayReverser(arr) {
+  let reversed = []
+  for (let i = arr.length - 1; i >= 0; i--) {
+    reversed.push(arr[i])
+  }
+  return reversed
+}
 
 
 //////////////////PROBLEM 14////////////////////
@@ -203,48 +218,67 @@ function secondFunction() {
 */
 
 //This array should contain the variable names (as strings) accessible in the global scope.
-let globalScope = ['firstFunction', 'outer']
+let globalScope = ['global']
 
 //This array should contain the variable names (as strings) accessible in the firstFunction function.
-let firstFunctionScope = ['outer', 'inner']
+let firstFunctionScope = ['global', 'outer']
 
 //This array should contain the variable names (as strings) accessible in the innerFunction function.
-let innerFunctionScope = ['global', 'inner', 'outer', 'functional']
+let innerFunctionScope = ['global', 'inner', 'outer']
 
 //This array should contain the variable names (as strings) accessible in the secondFunction function.
-let secondFunctionScope = ['secondFunction', 'firstFunction', 'global']
+let secondFunctionScope = ['functional', 'global']
 
 
 //////////////////PROBLEM 15////////////////////
-/* 
-  Write a function called firstItem that takes in two parameters: an array and a callback.  
+/*
+  Write a function called firstItem that takes in two parameters: an array and a callback.
   Invoke the callback passing the first item in the array as an argument.
 */
 
 //CODE HERE
 
+function firstItem(array, cb) {
+  cb(array[0])
+}
+
 //////////////////PROBLEM 16////////////////////
-/* 
-  Write a function called isItBob that takes in two arguments: an object and a callback function. 
-  Check if the object's name property is equal to 'Bob'.  
-  If it is, invoke the callback passing in true as an argument.  
+/*
+  Write a function called isItBob that takes in two arguments: an object and a callback function.
+  Check if the object's name property is equal to 'Bob'.
+  If it is, invoke the callback passing in true as an argument.
   Otherwise, invoke the callback passing in false.
 */
 
 //CODE HERE
 
+function isItBob(object, cb) {
+  if (object.name === 'Bob') {
+    cb(true)
+  } else {
+    cb(false)
+  }
+}
+
 //////////////////PROBLEM 17////////////////////
 /*
-  Write a function called giveMeDoubles that takes in two arguments: an array of numbers and a callback.  
+  Write a function called giveMeDoubles that takes in two arguments: an array of numbers and a callback.
   Use a for loop to double all numbers in the array.
   Then invoke the callback, passing in the doubled array.
 */
 
 //CODE HERE
 
+function giveMeDoubles(arr, cb) {
+  for (let i = 0; i < arr.length; i++) {
+    arr[i] = arr[i] * 2
+  }
+  cb(arr)
+}
+
 //////////////////PROBLEM 18////////////////////
 /*
-  Write a function called carFactory that takes in three parameters: a make, model, and year.  
+  Write a function called carFactory that takes in three parameters: a make, model, and year.
   When the function is invoked:
     - a string will be sent in for make
     - a string will be sent in for model
@@ -260,7 +294,7 @@ let secondFunctionScope = ['secondFunction', 'firstFunction', 'global']
     carFactory('toyota', 'camry', 2020)
   should return an object that looks like this:
   {
-    make: 'toyota', 
+    make: 'toyota',
     model: 'camry',
     year: 2020,
     isNew: true
@@ -268,3 +302,17 @@ let secondFunctionScope = ['secondFunction', 'firstFunction', 'global']
 */
 
 //CODE HERE
+
+function carFactory(make, model, year) {
+  const carObj = {
+    make,
+    model,
+    year,
+  }
+  if (year > 2018) {
+    carObj.isNew = true;
+  } else {
+    carObj.isNew = false;
+  }
+  return carObj
+}
