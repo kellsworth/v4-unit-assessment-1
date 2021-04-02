@@ -39,7 +39,7 @@ const gitHubDefinition = 'GitHub is great!'
 //CODE HERE
 
 const init = {
-    description: '',
+    description: 'create a new Git repository',
     code: 'git init',
 }
 
@@ -52,7 +52,11 @@ const init = {
 */
 
 //CODE HERE
+const clone = {
+    description: 'copies the github file',
+    code: 'git clone copy of github url',
 
+}
 //////////////////PROBLEM 5////////////////////
 /*
     Create an object called 'status' with 'description' and 'code' properties
@@ -60,7 +64,10 @@ const init = {
 */
 
 //CODE HERE
-
+const status = {
+    description: 'state of the current directory',
+    code: 'git status'
+}
 //////////////////PROBLEM 6////////////////////
 /*
     Create an object called 'add' with 'description' and 'code' properties
@@ -69,6 +76,10 @@ const init = {
 
 //CODE HERE
 
+const add = {
+    description: 'stage everything in the directory for an initial commit',
+    code: 'git add .',
+}
 //////////////////PROBLEM 7////////////////////
 /*
     Create an object called 'commit' with 'description' and 'code' properties
@@ -77,6 +88,10 @@ const init = {
 
 //CODE HERE
 
+const commit = {
+    description: 'commit staged snapshots',
+    code: 'git commit -m"description',
+}
 //////////////////PROBLEM 8////////////////////
 /*
     Create an object called 'addRemote' with 'description' and 'code' properties
@@ -84,6 +99,10 @@ const init = {
 */
 
 //CODE HERE
+const addRemote = {
+    description: 'connection to a remote repository',
+    code: 'git remote add [name] [URL]'
+}
 
 //////////////////PROBLEM 9////////////////////
 /*
@@ -92,3 +111,7 @@ const init = {
 */
 
 //CODE HERE
+const push = {
+    description: 'The push array method adds, or pushes an item',
+    code: 'git push'
+}
